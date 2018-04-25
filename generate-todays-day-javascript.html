@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<p>Todays day is <span id="day"></span></p>
+
+<script>
+
+var todaysDate = new Date();
+var todaysDayNum = todaysDate.getDay();
+
+var days = new Array(7);
+
+days[0] = "Sunday";
+days[1] = "Monday";
+days[2] = "Tueday";
+days[3] = "Wednesday";
+days[4] = "Thursday";
+days[5] = "Friday";
+days[6] = "Saturday";
+
+var todaysDay = days[todaysDayNum];
+
+document.getElementById("day").innerHTML = todaysDay;
+</script>
+</body>
+</html>
+
